@@ -1,0 +1,34 @@
+.quick-contact {
+    height: $quick-contact-height;
+}
+
+.quick-contact-mobile,
+.quick-contact-email,
+.quick-contact-note {
+    // Set position to relative so ::after can make use of it
+    //  using position absolute.
+    position: relative;
+
+    &::after {
+        // Use position absolute to stick to
+        //  quick-contact-[mobile|email|note] edges
+        position: absolute;
+    }
+}
+
+.quick-contact-mobile::after {
+    // Need content to render
+    content: '07738 122808';
+}
+
+.quick-contact-email::after {
+    // Need content to render
+    content: 'marianzburlea@gmail.com';
+    top: 30px;
+}
+
+.quick-contact-note::after {
+    // Need content to render
+    content: '(last updated: 19th of May, 2016)';
+    top: 60px;
+}
