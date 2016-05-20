@@ -1,15 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro);
 @import "reset";
 @import "fluid-typography";
+@import "layout";
 @import "variables";
 @import "quick-contact";
 
 /**
  * Enjoy writing beautiful SCSS
  */
-html {
-    background-color : #f1f1f1;
-}
 
-h1 {
-    color : dodgerblue;
-}
