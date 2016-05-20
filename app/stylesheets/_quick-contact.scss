@@ -1,25 +1,34 @@
 .quick-contact {
-    height : $quick-contact-height;
+    height: $quick-contact-height;
 }
 
 .quick-contact-mobile,
 .quick-contact-email,
 .quick-contact-note {
-    top    : 30px;
-    height : 30px;
-    min-width  : 200px;
+    // Set position to relative so ::after can make use of it
+    //  using position absolute.
+    position: relative;
+
+    &::after {
+        // Use position absolute to stick to
+        //  quick-contact-[mobile|email|note] edges
+        position: absolute;
+    }
 }
 
-%quick-contact-email-and-phone {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCAyMDAuMDAwMDEgNDkuOTk5OTk4Ij48ZyBmb250LXdlaWdodD0iNDAwIiBmb250LXNpemU9IjE0Ljc1NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGxldHRlci1zcGFjaW5nPSIwIiB3b3JkLXNwYWNpbmc9IjAiPjx0ZXh0IHk9IjEwMTkuMzI3IiB4PSIxLjg2MiIgc3R5bGU9ImxpbmUtaGVpZ2h0OjEyNSUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTEwMDIuMzYyKSI+PHRzcGFuIHk9IjEwMTkuMzI3IiB4PSIxLjg2MiI+bWFyaWFuemJ1cmxlYUBnbWFpbC5jb208L3RzcGFuPjwvdGV4dD48dGV4dCB5PSIxMDQzLjk0NCIgeD0iMS44OSIgc3R5bGU9ImxpbmUtaGVpZ2h0OjEyNSUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTEwMDIuMzYyKSI+PHRzcGFuIHk9IjEwNDMuOTQ0IiB4PSIxLjg5Ij4wNzczOCAxMjIgODA4PC90c3Bhbj48L3RleHQ+PC9nPjwvc3ZnPg==);
-    background-repeat : no-repeat;
+.quick-contact-mobile::after {
+    // Need content to render
+    content: '07738 122808';
 }
 
-.quick-contact-mobile {
-    @extend %quick-contact-email-and-phone;
-    background-position: 0 -20px;
+.quick-contact-email::after {
+    // Need content to render
+    content: 'marianzburlea@gmail.com';
+    top: 1rem;
 }
 
-.quick-contact-email {
-    @extend %quick-contact-email-and-phone;
+.quick-contact-note::after {
+    // Need content to render
+    content: '(last updated: 19th of May, 2016)';
+    top: 2rem;
 }
