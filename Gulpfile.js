@@ -76,7 +76,7 @@ gulp.task('serve', ['index'], function () {
     ]);
 
     // Watch for sass
-    gulp.watch(paths.src + '/**/*.scss', ['sass:dev']);
+    gulp.watch([paths.src + '/**/*.scss', paths.src + '/**/_*.scss'], ['sass:dev']);
     //
     // // Watch for HTML
     gulp.watch(paths.src + '/**/*.html', ['index']);

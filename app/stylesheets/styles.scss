@@ -8,4 +8,19 @@
 /**
  * Enjoy writing beautiful SCSS
  */
+.skill-list {
+    display         : flex;
+    flex-wrap       : wrap;
+    justify-content : space-around;
+}
+
+.skill {
+    box-sizing: border-box;
+    height: 2rem;
+    line-height: 1.6rem;
+    margin           : 0.2rem;
+    padding          : 0.1rem 0.8rem;
+    background-color : cornflowerblue;
+    border-radius: 1rem;
+}
 
