@@ -1,14 +1,6 @@
-h2.section-title Latest Cool projects
+h2.section-title #{data.coolProjects.title}
     .cool-projects
-        .cool-project
-            p.cool-project-description
-                | Pure CSS3 and HTML5 Only Game prototype! Play the game and
-                a.cool-project-link-inline(href='http://game.bitbee.uk', target='_blank', title='Pure CSS3 and HTML5 Only Game') share love
-                | .
-            a.cool-project-link-title(href='https://github.com/marianzburlea/css3-html5-game') marianzburlea/css3-html5-game
-        .cool-project
-            p.cool-project-description
-                | Angular Attack contest project. See
-                a.cool-project-link-inline(href='http://gymbo.2016.angularattack.io/', target='_blank', title='record your workouts and share results with friends') Gymbo
-                |                             in action. Record your workouts and share results with friends.
-            a.cool-project-link-title(href='https://github.com/rumblex/angularattack2016-gymbo') rumblex/angularattack2016-gymbo
+        for project in data.coolProjects.projects
+            .cool-project
+                p.cool-project-description !{project.projectDescription}
+                a.cool-project-link-title(href='#{project.githubLink}') #{project.githubTitle}

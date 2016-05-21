@@ -5,6 +5,25 @@
             "lastName" : "Zburlea",
             "jobTitle" : "Software Engineer"
         },
+        "about"     : {
+            "title"      : "About",
+            "description": "I translate geek into English and I’m a problem solver driven by every day's challenge. Work happens to be my passion and, at the core, I am also an innovator that focuses on designing and building award winning technologies for the future, as it's closer than we think."
+        },
+        "coolProjects"     : {
+            "title"      : "Latest Cool projects",
+            "projects": [
+                {
+                    "projectDescription": "Pure CSS3 and HTML5 Only Game prototype! Play the game and <a class=\"cool-project-link-inline\" href=\"http://game.bitbee.uk\" target=\"_blank\" title=\"Pure CSS3 and HTML5 Only Game\">share love</a>.",
+                    "githubTitle": "marianzburlea/css3-html5-game",
+                    "githubLink": "https://github.com/marianzburlea/css3-html5-game"
+                },
+                {
+                    "projectDescription": "Angular Attack contest project. See <a class=\"cool-project-link-inline\" href=\"http://gymbo.2016.angularattack.io/\" target=\"_blank\" title=\"record your workouts and share results with friends\">Gymbo</a> in action. Record your workouts and share results with friends.",
+                    "githubTitle": "rumblex/angularattack2016-gymbo",
+                    "githubLink": "https://github.com/rumblex/angularattack2016-gymbo"
+                }
+            ]
+        },
         "employment": {
             "Front End": [
                 "Angular 2",

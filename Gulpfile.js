@@ -57,7 +57,7 @@ gulp.task('index', ['clean:tmp', 'sass:dev'], function () {
     // return gulp.src(paths.src + '/index.html')
     return gulp.src(paths.src + '/index.jade')
         .pipe(data((file) => require('./app/data/cv.json')))
-        .pipe(jade())
+        .pipe(jade({pretty: true}))
         .pipe(inject(
             gulp.src(paths.tmp + '/**/*.css', {
                 read: false
