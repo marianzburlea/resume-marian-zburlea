@@ -84,7 +84,7 @@ gulp.task('serve', ['index'], function () {
     // // Watch for HTML
     // gulp.watch(paths.src + '/**/*.html', ['index']);
     gulp.watch(paths.src + '/**/*.jade', ['index']);
-    gulp.watch(paths.tmp + '/**/*.html').on('change', browserSync.reload);
+    gulp.watch(paths.tmp + '/index.html').on('change', browserSync.reload);
 });
 
 gulp.task('sass:dev', function () {
