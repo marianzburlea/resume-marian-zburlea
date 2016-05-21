@@ -1,5 +1,10 @@
 {
     "data": {
+        "person"    : {
+            "firstName": "Marian",
+            "lastName" : "Zburlea",
+            "jobTitle" : "Software Engineer"
+        },
         "employment": {
             "Front End": [
                 "Angular 2",
@@ -11,6 +16,7 @@
                 "Bootstrap",
                 "Ecmascript 6 (ES6)",
                 "JavaScript",
+                "Jade",
                 "Polymer",
                 "jQuery",
                 "Angular.js",
@@ -41,7 +47,7 @@
                 "Illustrator",
                 "WAI"
             ],
-            "Back End": [
+            "Back End" : [
                 "Firebase",
                 "Git",
                 "Amazon AWS",
@@ -76,7 +82,7 @@
                 "Puppet",
                 "Virtual Machines"
             ],
-            "OS": [
+            "OS"       : [
                 "Windows",
                 "Linux",
                 "DOS/CLI",
