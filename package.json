@@ -30,6 +30,7 @@
     "gulp-filter": "^3.0.1",
     "gulp-html-minifier": "^0.1.8",
     "gulp-inject": "^4.0.0",
+    "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.0.1",
     "gulp-rev": "^7.0.0",
     "gulp-sass": "^2.1.0",
