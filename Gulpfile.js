@@ -10,6 +10,7 @@ var paths = {
 
 var gulp         = require('gulp');
 var jade         = require('gulp-jade');
+var data         = require('gulp-data');
 var browserSync  = require('browser-sync');
 var sass         = require('gulp-sass');
 var rev          = require('gulp-rev');
@@ -55,6 +56,7 @@ gulp.task('clean:tmp', function () {
 gulp.task('index', ['clean:tmp', 'sass:dev'], function () {
     // return gulp.src(paths.src + '/index.html')
     return gulp.src(paths.src + '/index.jade')
+        .pipe(data((file) => require('./app/data/cv.json')))
         .pipe(jade())
         .pipe(inject(
             gulp.src(paths.tmp + '/**/*.css', {

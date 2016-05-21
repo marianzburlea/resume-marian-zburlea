@@ -1,6 +1,5 @@
-- var skills = {"Front End": ["Angular 2", "TypeScript", "HTML 4/5", "CSS 2/3", "SMACSS / OOCSS", "Foundation", "Bootstrap", "Ecmascript 6 (ES6)", "JavaScript", "Polymer", "jQuery", "Angular.js", "Grunt", "Gulp", "Bower", "Yeoman", "Ember", "Selenium", "Protractor", "Facebook API", "Twitter API", "Github API", "Google API", "Sass", "Compass", "Bourbon", "Neat", "Less", "Stylus", "FramerJS", "GreenSock", "SEO", "Word", "Excel", "PowerPoint", "Photoshop", "Illustrator", "WAI"], "Back End": ["Firebase", "Git", "Amazon AWS", "S3", "Cloud Front", "JSON", "REST", "NodeJS", "Yii 1/2", "PHP", "MySQL", "Linux", "Apache", "Nginx", "Apache benchmark", "ActionScript", "XML", "Flash", "Solr", "Solarium", "ElasticSearch", "Redis", "Magento", "Drupal", "Bash", "TDD/BDD", "Twig", "Jira", "Rally", "Agile", "Vagrant", "Puppet", "Virtual Machines"], "OS": ["Windows", "Linux", "DOS/CLI", "Mac"] }
 h2.section-title Skills
-    for title, titleKey in skills
+    for title, titleKey in data.employment
         h3 #{titleKey}
             ul.skill-list
                 for skill, index in title
