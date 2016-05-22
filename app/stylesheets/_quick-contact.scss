@@ -8,11 +8,13 @@
     // Set position to relative so ::after can make use of it
     //  using position absolute.
     position: relative;
+    padding: 0.2rem 0;
 
     &::after {
         // Use position absolute to stick to
         //  quick-contact-[mobile|email|note] edges
         position: absolute;
+        left: 1.5rem;
     }
 }
 
@@ -24,11 +26,9 @@
 .quick-contact-email::after {
     // Need content to render
     content: 'marianzburlea@gmail.com';
-    top: 1rem;
 }
 
 .quick-contact-note::after {
     // Need content to render
     content: '(last updated: 19th of May, 2016)';
-    top: 2rem;
 }

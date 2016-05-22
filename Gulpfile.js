@@ -53,11 +53,16 @@ gulp.task('clean:tmp', function () {
         .pipe(clean());
 });
 
-gulp.task('index', ['clean:tmp', 'sass:dev'], function () {
+gulp.task('assets', function () {
+    gulp.src(paths.src + '/assets/fonts/**/*')
+        .pipe(gulp.dest(paths.tmp + '/fonts'));
+});
+
+gulp.task('index', ['clean:tmp', 'assets', 'sass:dev'], function () {
     // return gulp.src(paths.src + '/index.html')
     return gulp.src(paths.src + '/index.jade')
         .pipe(data((file) => require('./app/data/cv.json')))
-        .pipe(jade({pretty: true}))
+        .pipe(jade({ pretty: true }))
         .pipe(inject(
             gulp.src(paths.tmp + '/**/*.css', {
                 read: false
@@ -65,7 +70,7 @@ gulp.task('index', ['clean:tmp', 'sass:dev'], function () {
             {
                 relative    : false,
                 addRootSlash: true,
-                transform   : function (filepath, file, i, length) {
+                transform   : function (filepath) {
                     filepath = filepath.replace(/\/tmp/, '');
                     return `<link rel="stylesheet" href="${filepath}">`;
                 }
