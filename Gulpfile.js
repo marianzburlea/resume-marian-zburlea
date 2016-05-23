@@ -123,7 +123,7 @@ gulp.task('sass:prod', function () {
         .pipe(gulp.dest(paths.pub + '/stylesheets'));
 });
 
-gulp.task('minify', ['sass:prod'], function () {
+gulp.task('minify', ['assets', 'sass:prod'], function () {
     // gulp.src(paths.src + '/**/*.html')
     gulp.src(paths.src + '/**/*.jade')
         .pipe(data((file) => require('./app/data/cv.json')))
