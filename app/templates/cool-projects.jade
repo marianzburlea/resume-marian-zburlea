@@ -2,6 +2,6 @@ h2.section-title #{data.coolProjects.title}
 .cool-projects
     for project in data.coolProjects.projects
         .cool-project
-            p.cool-project-description !{project.projectDescription}
+            p.section-description !{project.projectDescription}
             a.cool-project-link-title(href='#{project.githubLink}') #{project.githubTitle} <span class="iresume-github"></span>
 
