@@ -54,12 +54,17 @@ gulp.task('clean:tmp', function () {
         .pipe(clean());
 });
 
-gulp.task('assets', function () {
+gulp.task('assets:dev', function () {
     gulp.src(paths.src + '/assets/fonts/**/*')
         .pipe(gulp.dest(paths.tmp + '/fonts'));
 });
 
-gulp.task('index', ['clean:tmp', 'assets', 'sass:dev'], function () {
+gulp.task('assets:build', function () {
+    gulp.src(paths.src + '/assets/fonts/**/*')
+        .pipe(gulp.dest(paths.pub + '/fonts'));
+});
+
+gulp.task('index', ['clean:tmp', 'assets:dev', 'sass:dev'], function () {
     // return gulp.src(paths.src + '/index.html')
     return gulp.src(paths.src + '/*.jade')
         .pipe(data((file) => require('./app/data/cv.json')))
@@ -123,7 +128,7 @@ gulp.task('sass:prod', function () {
         .pipe(gulp.dest(paths.pub + '/stylesheets'));
 });
 
-gulp.task('minify', ['assets', 'sass:prod'], function () {
+gulp.task('minify', ['assets:build', 'sass:prod'], function () {
     // gulp.src(paths.src + '/**/*.html')
     gulp.src(paths.src + '/**/*.jade')
         .pipe(data((file) => require('./app/data/cv.json')))
