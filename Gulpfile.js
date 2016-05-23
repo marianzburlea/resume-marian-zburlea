@@ -11,6 +11,7 @@ var paths = {
 var gulp         = require('gulp');
 var jade         = require('gulp-jade');
 var data         = require('gulp-data');
+var debug        = require('gulp-debug');
 var browserSync  = require('browser-sync');
 var sass         = require('gulp-sass');
 var rev          = require('gulp-rev');
@@ -60,20 +61,16 @@ gulp.task('assets', function () {
 
 gulp.task('index', ['clean:tmp', 'assets', 'sass:dev'], function () {
     // return gulp.src(paths.src + '/index.html')
-    return gulp.src(paths.src + '/index.jade')
+    return gulp.src(paths.src + '/*.jade')
         .pipe(data((file) => require('./app/data/cv.json')))
         .pipe(jade({ pretty: true }))
         .pipe(inject(
-            gulp.src(paths.tmp + '/**/*.css', {
+            gulp.src(paths.tmp + '/stylesheets/**/*.css', {
                 read: false
-            }),
+            }).pipe(debug()),
             {
                 relative    : false,
-                addRootSlash: true,
-                transform   : function (filepath) {
-                    filepath = filepath.replace(/\/tmp/, '');
-                    return `<link rel="stylesheet" href="${filepath}">`;
-                }
+                addRootSlash: true
             }
         ))
         .pipe(gulp.dest(paths.tmp));
@@ -90,8 +87,14 @@ gulp.task('serve', ['index'], function () {
     //
     // // Watch for HTML
     // gulp.watch(paths.src + '/**/*.html', ['index']);
-    gulp.watch(paths.src + '/**/*.jade', ['index']);
-    gulp.watch(paths.tmp + '/index.html').on('change', browserSync.reload);
+    gulp.watch(paths.src + '/**/*.jade', ['index']).on('change', function(event) {
+        console.log('File src' + event.path + ' was ' + event.type + ', running tasks...');
+        browserSync.reload;
+    });
+    gulp.watch(paths.tmp + '/index.html').on('change', function(event) {
+        console.log('File tmp' + event.path + ' was ' + event.type + ', running tasks...');
+        browserSync.reload;
+    });
 });
 
 gulp.task('sass:dev', function () {
