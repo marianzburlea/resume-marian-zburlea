@@ -13,6 +13,10 @@
  */
 
 .skills {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -25,6 +29,7 @@
     line-height: 1.6rem;
     margin: 0.3rem;
     padding: 0.1rem 0.8rem;
-    border : 0.2rem solid cornflowerblue;
+    border: 0.2rem solid cornflowerblue;
     border-radius: 1rem;
+    display: inline-block;
 }
