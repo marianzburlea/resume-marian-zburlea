@@ -1,7 +1,15 @@
 @font-face {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Maven Pro Regular'), local('MavenProRegular'), url(https://fonts.gstatic.com/s/mavenpro/v7/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
     font-family: 'iresume';
-    src:    url('/fonts/iresume.eot?bkoe4p');
-    src:    url('/fonts/iresume.eot?bkoe4p#iefix') format('embedded-opentype'),
+    src: url('/fonts/iresume.eot?bkoe4p');
+    src: url('/fonts/iresume.eot?bkoe4p#iefix') format('embedded-opentype'),
     url('/fonts/iresume.ttf?bkoe4p') format('truetype'),
     url('/fonts/iresume.woff?bkoe4p') format('woff'),
     url('/fonts/iresume.svg?bkoe4p#iresume') format('svg');
@@ -27,48 +35,63 @@
 .iresume-plus:before {
     content: "\ea0a";
 }
+
 .iresume-terminal:before {
     content: "\ea81";
 }
+
 .iresume-google3:before {
     content: "\ea8a";
 }
+
 .iresume-google-plus2:before {
     content: "\ea8c";
 }
+
 .iresume-facebook2:before {
     content: "\ea91";
 }
+
 .iresume-whatsapp:before {
     content: "\ea93";
 }
+
 .iresume-youtube2:before {
     content: "\ea9e";
 }
+
 .iresume-github:before {
     content: "\eab0";
 }
+
 .iresume-tumblr2:before {
     content: "\eaba";
 }
+
 .iresume-tux:before {
     content: "\eabd";
 }
+
 .iresume-appleinc:before {
     content: "\eabe";
 }
+
 .iresume-android:before {
     content: "\eac0";
 }
+
 .iresume-windows8:before {
     content: "\eac2";
 }
+
 .iresume-skype:before {
     content: "\eac5";
 }
+
 .iresume-linkedin:before {
     content: "\eac9";
 }
+
 .iresume-html-five:before {
     content: "\eae4";
 }
