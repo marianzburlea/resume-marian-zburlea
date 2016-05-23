@@ -75,7 +75,11 @@ gulp.task('index', ['clean:tmp', 'assets:dev', 'sass:dev'], function () {
             }).pipe(debug()),
             {
                 relative    : false,
-                addRootSlash: true
+                addRootSlash: true,
+                transform   : function (filepath) {
+                    filepath = filepath.replace(/\/tmp/, '');
+                    return `<link rel="stylesheet" href="${filepath}">`;
+                }
             }
         ))
         .pipe(gulp.dest(paths.tmp));

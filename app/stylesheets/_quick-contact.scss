@@ -1,5 +1,6 @@
 .quick-contact {
     height: $quick-contact-height;
+    text-align: center;
 }
 
 .quick-contact-mobile,
@@ -13,8 +14,8 @@
     &::after {
         // Use position absolute to stick to
         //  quick-contact-[mobile|email|note] edges
-        position: absolute;
-        left: 1.5rem;
+        //position: absolute;
+        padding-left: 0.5rem;
     }
 }
 

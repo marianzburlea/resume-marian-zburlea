@@ -5,23 +5,26 @@
 @import "layout";
 @import "variables";
 @import "quick-contact";
+@import "cool-projects";
 
 /**
  * Enjoy writing beautiful SCSS
  */
-.skill-list {
-    display         : flex;
-    flex-wrap       : wrap;
-    justify-content : space-around;
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
 .skill {
     box-sizing: border-box;
     height: 2rem;
     line-height: 1.6rem;
-    margin           : 0.2rem;
-    padding          : 0.1rem 0.8rem;
-    background-color : cornflowerblue;
+    margin: 0.3rem;
+    padding: 0.1rem 0.8rem;
+    border : 0.2rem solid cornflowerblue;
     border-radius: 1rem;
 }
 

@@ -1,6 +1,6 @@
 h2.section-title Skills
-    for title, titleKey in data.employment
-        h3 #{titleKey}
-            ul.skill-list
-                for skill, index in title
-                    li.skill #{skill}
+for title, titleKey in data.employment
+    h3 #{titleKey}
+    ul.skills #{" "}
+        for skill, index in title
+            li.skill !{skill} #{" "}
