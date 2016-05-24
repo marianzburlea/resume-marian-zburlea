@@ -59,7 +59,12 @@ gulp.task('assets:dev', function () {
         .pipe(gulp.dest(paths.tmp + '/fonts'));
 });
 
-gulp.task('assets:build', function () {
+gulp.task('extra', function () {
+    gulp.src(paths.src + '/.htaccess')
+        .pipe(gulp.dest(paths.pub));
+});
+
+gulp.task('assets:build', ['extra'], function () {
     gulp.src(paths.src + '/assets/fonts/**/*')
         .pipe(gulp.dest(paths.pub + '/fonts'));
 });
