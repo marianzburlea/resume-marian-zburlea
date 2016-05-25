@@ -9,10 +9,24 @@ header, section {
 }
 
 .section-title {
-    color: royalblue;
-    background: rgba(0, 0, 0, 0.02);
+    color: white;
+    background-color: #1f2328;
     padding: 0.5rem;
+    position: relative;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #1f2328;
+        transform: rotate(45deg);
+        left: -9px;
+        top: 30%;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        z-index: -1;
+    }
 }
 
 .section-description {
