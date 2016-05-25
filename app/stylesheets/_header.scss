@@ -1,0 +1,24 @@
+header {
+    text-align: center;
+}
+
+h1 {
+    @extend %angularjs;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 60px 100%;
+    display: inline-block;
+    padding-left: 3.5rem;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+        content: '2';
+        color: black;
+        position: absolute;
+        left: 1.4rem;
+        top: 50%;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+}
