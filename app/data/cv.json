@@ -62,6 +62,103 @@
                     "Provide proof of concepts and advise the business of the relevant benefits of investing in these technologies",
                     "Take ownership of own personal development and career progression"
                 ]
+            },
+            {
+                "employmentDate"    : "2013 Apr – 2014 Oct",
+                "employmentJobTitle": "Software engineer",
+                "employmentCompany" : "Chemist Direct UK",
+                "employmentSummary" : "Restructure and rebuild using Angular 2",
+                "employmentDuties"  : [
+                    "Attended meetings with CTO, CEO, Head of Product, managers and others as solution adviser and problem solver",
+                    "Liaise and consult with offshore team and partners",
+                    "Attended personnel interviews",
+                    "Set up development and testing servers",
+                    "Plan and set up multiple Yii app infrastructure",
+                    "Set up Git for version control system and offer guidance",
+                    "Develop and extend the RESTFul interface of Magento",
+                    "Customize and extend the admin panel of Magento",
+                    "Create mass import/export applications to and from Magento",
+                    "Implemented CDN and automated the process for images",
+                    "Trained staff to use CDN for other assets",
+                    "Develop Yii console commands that talk via REST with other Yii apps, Magento or external services",
+                    "Implement RabbitMQ to replace some of the existing cron jobs",
+                    "Implement Solr/Solarium for faceting and product retrieval",
+                    "Implement Redis for better cache management",
+                    "Implement and training for Twig template system",
+                    "Identify problems and tune up back and front end",
+                    "Identify, fix and improve SEO",
+                    "Fix and improve UX and responsive design issues",
+                    "QC and training of staff",
+                    "Developed risk free solutions"
+                ]
+            },
+            {
+                "employmentDate"    : "2011 Sep – 2013 Apr",
+                "employmentJobTitle": "Senior web developer",
+                "employmentCompany" : "Content Formula",
+                "employmentSummary" : "A full stack Senior Web Developer with a focus in Yii PHP Framework, Drupal 6 & 7, mobile web applications etc. I’m involved in all stages of project lifecycles, specifically a key member of the creative process, project development plans, building and testing. I’ve had the opportunity to work in the areas like HTML5 Mobile Web applications, High traffic Drupal Sites, Learning tools built with Yii PHP framework, parallax websites, Flash ActionScript 2&3 web & mobile apps, email campaigns etc. I am also responsible of QC of other developer’s code and enforcing best practices and technologies.",
+                "employmentDuties"  : [
+                    "supervise and run database migrations",
+                    "create and maintain shell scripts for automatization",
+                    "implement caching using Memcache, Redis, Varnish",
+                    "implement NoSQL databases like Solr",
+                    "build and maintain server setups",
+                    "create custom reporting apps",
+                    "build and maintain Drupal 5, 6, 7 websites",
+                    "extend or create Drupal modules and themes",
+                    "create or extend custom JavaScript features like: media sliders, drag & drop, alerts, modals, menus etc.",
+                    "assured compatibility or best case scenario of web sites running on IE6+ and modern ones like Chrome, Firefox, Opera, Safari and Mobile",
+                    "assured W3C compatibility",
+                    "build and test newsletters",
+                    "converted PSD to HTML/CSS according to best practices",
+                    "provide phone support or face to face for clients",
+                    "managed and improved the search engine optimization",
+                    "managed solutions to improve load and render time"
+                ]
+            },
+            {
+                "employmentDate"    : "2006 – 2011",
+                "employmentJobTitle": "Web developer & designer, SEO",
+                "employmentCompany" : "ZeusMedia",
+                "employmentSummary" : "A full stack Senior Web Developer with a focus in Yii PHP Framework, Drupal 6 & 7, mobile web applications etc. I’m involved in all stages of project lifecycles, specifically a key member of the creative process, project development plans, building and testing. I’ve had the opportunity to work in the areas like HTML5 Mobile Web applications, High traffic Drupal Sites, Learning tools built with Yii PHP framework, parallax websites, Flash ActionScript 2&3 web & mobile apps, email campaigns etc. I am also responsible of QC of other developer’s code and enforcing best practices and technologies.",
+                "employmentDuties"  : [
+                    "build custom CMS solutions from scratch on top of own PHP framework",
+                    "convert PSD to CSS/HTML according to best practices",
+                    "build and manage search engine optimization",
+                    "manage to get over 50 web sites in Google first page",
+                    "manage to get over 20 web sites in Google first results",
+                    "build custom UI and Widgets (mass uploaders, custom sortable and selectable grids, image processors, scrollbars, accordions and more) using Adobe Flash and ActionScript, Adobe Air",
+                    "build custom apps (Desktop and Web)",
+                    "build web spiders and scrappers",
+                    "design and develop project structure",
+                    "document project requirements",
+                    "provided training for software use",
+                    "liaise with clients",
+                    "web consulting",
+                    "create and maintain shell scripts for automatization",
+                    "assured compatibility or best case scenario of web sites running on IE6+ and modern ones like Chrome, Firefox, Opera, Safari and Mobile",
+                    "assured W3C compatibility",
+                    "managed solutions to improve load and render time",
+                    "design user interface and other custom designs using Photoshop, Illustrator, Corel, Fireworks"
+                ]
+            },
+            {
+                "employmentDate"    : "2002 – 2006",
+                "employmentJobTitle": "Web developer & designer",
+                "employmentCompany" : "Contractor",
+                "employmentSummary" : "",
+                "employmentDuties": []
+            },
+            {
+                "employmentDate"    : "1998 – 2002",
+                "employmentJobTitle": "Web developer & designer, Sys Admin",
+                "employmentCompany" : "Romaris",
+                "employmentSummary" : "",
+                "employmentDuties": [
+                    "evelop, design and manage over 50 web sites",
+                    "provide training for personnel",
+                    "build and admin network & hardware & software"
+                ]
             }
         ],
         "skills"      : {
