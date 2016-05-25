@@ -28,8 +28,40 @@
             {
                 "employmentDate"    : "2013 Jun – present",
                 "employmentJobTitle": "DIRECTOR",
-                "employmentCompany": "Smart Yii Limited",
-                "employmentSummary": "This is the company that I contract through."
+                "employmentCompany" : "Smart Yii Limited",
+                "employmentSummary" : "This is the company that I contract through.",
+                "employmentDuties"  : [
+                    "This is the company that I contract through."
+                ]
+            },
+            {
+                "employmentDate"    : "2015 Oct – present",
+                "employmentJobTitle": "Senior Front-End Developer",
+                "employmentCompany" : "Argus Software",
+                "employmentSummary" : "Restructure and rebuild using Angular 2",
+                "employmentDuties"  : [
+                    "Restructure and rebuild the front end solution migrating from Ember to AngularJS and AngularJS 2 feature based. Other technologies used: sass, gulp, node, npm, typescript etc."
+                ]
+            },
+            {
+                "employmentDate"    : "2014 Oct – 2015 Oct",
+                "employmentJobTitle": "Senior UI Developer",
+                "employmentCompany" : "Direct Line Group",
+                "employmentSummary" : "Restructure and rebuild using Angular 2",
+                "employmentDuties"  : [
+                    "My main responsibility was to build the mobile, tablet and desktop interface for a new insurance product. On a daily basis I’ve been using HTML5, CSS3 and JavaScript (vanilla or AngularJS) to skin the interface. In this process I’ve played an important role among the front-end developers leading and helping them deliver their tasks. I’ve also been in close touch with the designers, stakeholders and managers to ensure good communication and solution adoption.",
+                    "Champion the agile process followed within the UI Dev Team. Ensure that our processes are understood by others",
+                    "Advise and propose best practice into design process, when required, to help achieve a more robust UI",
+                    "Develop web pages from approved designs and content requirements using technologies including HTML, CSS and JavaScript",
+                    "Work with and manage code repositories",
+                    "Complete all allocated tasks as prioritized and without incident or issue, in line with agreed time scales",
+                    "Perform and complete cross browser compliance testing and accessibility testing",
+                    "Provide relevant support to CIO development teams and teams within Digital Services",
+                    "Support and mentor fellow team members",
+                    "Research new technologies and their potential uses on the Direct Line Group websites",
+                    "Provide proof of concepts and advise the business of the relevant benefits of investing in these technologies",
+                    "Take ownership of own personal development and career progression"
+                ]
             }
         ],
         "skills"      : {

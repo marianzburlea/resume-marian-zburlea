@@ -7,6 +7,8 @@ for employment, key in data.employment
         .employment-job-title #{employment.employmentJobTitle}
         .employment-company #{employment.employmentCompany}
         .employment-summary #{employment.employmentSummary}
-            p Lorem ipsum dolor sit amet, consectetur adipisicing.
-            a.employment-read-more(href='#', title='read more') read more
+        ul.employment-duties
+        for duty in employment.employmentDuties
+            li #{duty}
+
 
