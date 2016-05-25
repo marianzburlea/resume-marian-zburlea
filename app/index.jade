@@ -4,10 +4,13 @@ html(lang='en')
         include templates/head
     body
         .resume-wrapper
+            include templates/navigation
             include templates/header
             section
+                a(name="about")
                 include templates/about
             section
+                a(name="projects")
                 include templates/cool-projects
             section
                 include templates/skills
