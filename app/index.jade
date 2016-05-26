@@ -6,18 +6,16 @@ html(lang='en')
         .resume-wrapper
             include templates/navigation
             include templates/header
-            section
-                a(name="about")
-                include templates/about
-            section
-                a(name="projects")
-                include templates/cool-projects
-            section
-                a(name="skills")
-                include templates/skills
-            section
-                a(name="awards")
-                include templates/awards
-            section
-                a(name="employment")
-                include templates/employment
+            #sections
+                section#about
+                    include templates/about
+                section#projects
+                    include templates/cool-projects
+                section#skills
+                    include templates/skills
+                section#awards
+                    include templates/awards
+                section#employment
+                    include templates/employment
+            div#home
+                a(href="/") home

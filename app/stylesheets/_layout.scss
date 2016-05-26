@@ -4,6 +4,13 @@
     //width: calc(100vw - 60px);
 }
 
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
 header, section {
     @extend %section;
 }
@@ -18,8 +25,8 @@ header, section {
     &::before {
         content: '';
         position: absolute;
-        width: 20px;
-        height: 20px;
+        width: 1.1rem;
+        height: 1.1rem;
         background-color: #1f2328;
         transform: rotate(45deg);
         left: -9px;
@@ -34,13 +41,44 @@ header, section {
     line-height: 1.5rem;
 }
 
+:target {
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+#home {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    a {
+        color: white;
+        text-decoration: none;
+        //border: 0.2rem solid #5b2a22;
+        padding: 0.5rem 0.6rem;
+        background-color: #da6955;
+    }
+}
+
 section {
-    position: relative;
+    position: absolute;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     background: #fff;
+    left: 100%;
+    width: 100%;
+    transition: 0.2s;
+    top: 0;
+    bottom: 0;
 }
 
 .resume-wrapper {
     padding: 1rem;
     box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
 }
