@@ -42,7 +42,7 @@ header, section {
 }
 
 :target {
-    left: 0;
+    right: 0%;
     position: absolute;
     z-index: 1;
     overflow-y: auto;
@@ -71,7 +71,7 @@ section {
     position: absolute;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     background: #fff;
-    left: 100%;
+    right: -100%;
     width: 100%;
     transition: 0.2s;
     top: 0;
@@ -86,4 +86,5 @@ section {
     top: 0;
     bottom: 0;
     height: 100%;
+    width: 100%
 }
