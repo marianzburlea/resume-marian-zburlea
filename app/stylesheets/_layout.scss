@@ -48,6 +48,10 @@ header, section {
     overflow-y: auto;
 }
 
+.navigation-list a {
+    padding: 1rem;
+}
+
 #home {
     position: fixed;
     top: 0;
@@ -72,6 +76,7 @@ section {
     transition: 0.2s;
     top: 0;
     bottom: 0;
+    bottom: -24px;
 }
 
 .resume-wrapper {
