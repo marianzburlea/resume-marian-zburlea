@@ -1,0 +1,44 @@
+.employment-title,
+.employment-description,
+.employment-location,
+.employment-date {
+    padding: 0.2rem;
+}
+
+.employment {
+    padding: 1rem;
+}
+
+.employment-title {
+    color: #5e646c;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.employment-title-and-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.employment-company {
+    font-style: italic;
+    color: $color-orange;
+    font-weight: bold;
+}
+
+.employment-job-title,
+.employment-date {
+    font-weight: bold;
+}
+
+.employment-summary {
+    margin-top: 1rem;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+}
+
+li {
+    margin-top: 0.5rem;
+    text-indent: 2rem;
+    line-height: 1.2rem;
+}

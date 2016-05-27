@@ -3,8 +3,9 @@ h2.section-title Employment
 .employments
 for employment, key in data.employment
     .employment
-        .employment-date #{employment.employmentDate}
-        .employment-job-title #{employment.employmentJobTitle}
+        .employment-title-and-time
+            .employment-job-title #{employment.employmentJobTitle}
+            .employment-date #{employment.employmentDate}
         .employment-company #{employment.employmentCompany}
         .employment-summary #{employment.employmentSummary}
         ul.employment-duties

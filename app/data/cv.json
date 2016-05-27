@@ -47,24 +47,20 @@
                 "employmentJobTitle": "DIRECTOR",
                 "employmentCompany" : "Smart Yii Limited",
                 "employmentSummary" : "This is the company that I contract through.",
-                "employmentDuties"  : [
-                    "This is the company that I contract through."
-                ]
+                "employmentDuties"  : []
             },
             {
                 "employmentDate"    : "2015 Oct – present",
                 "employmentJobTitle": "Senior Front-End Developer",
                 "employmentCompany" : "Argus Software",
-                "employmentSummary" : "Restructure and rebuild using Angular 2",
-                "employmentDuties"  : [
-                    "Restructure and rebuild the front end solution migrating from Ember to AngularJS and AngularJS 2 feature based. Other technologies used: sass, gulp, node, npm, typescript etc."
-                ]
+                "employmentSummary" : "Restructure and rebuild the front end solution migrating from Ember to AngularJS and AngularJS 2 feature based. Other technologies used: sass, gulp, node, npm, typescript etc.",
+                "employmentDuties"  : []
             },
             {
                 "employmentDate"    : "2014 Oct – 2015 Oct",
                 "employmentJobTitle": "Senior UI Developer",
                 "employmentCompany" : "Direct Line Group",
-                "employmentSummary" : "Restructure and rebuild using Angular 2",
+                "employmentSummary" : "Restructure and rebuild using Angular 1.4",
                 "employmentDuties"  : [
                     "My main responsibility was to build the mobile, tablet and desktop interface for a new insurance product. On a daily basis I’ve been using HTML5, CSS3 and JavaScript (vanilla or AngularJS) to skin the interface. In this process I’ve played an important role among the front-end developers leading and helping them deliver their tasks. I’ve also been in close touch with the designers, stakeholders and managers to ensure good communication and solution adoption.",
                     "Champion the agile process followed within the UI Dev Team. Ensure that our processes are understood by others",
@@ -84,7 +80,7 @@
                 "employmentDate"    : "2013 Apr – 2014 Oct",
                 "employmentJobTitle": "Software engineer",
                 "employmentCompany" : "Chemist Direct UK",
-                "employmentSummary" : "Restructure and rebuild using Angular 2",
+                "employmentSummary" : "Redesign and rebuild the #1 online chemical selling website in UK using Yii1 & Angular 1",
                 "employmentDuties"  : [
                     "Attended meetings with CTO, CEO, Head of Product, managers and others as solution adviser and problem solver",
                     "Liaise and consult with offshore team and partners",
