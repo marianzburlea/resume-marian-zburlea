@@ -1,2 +1,15 @@
 h2.section-title #{data.about.title}
+header
+    h1
+        span  #{data.person.firstName + ' ' + data.person.lastName}
+    h2
+        span.iresume-terminal
+        span {#{data.person.jobTitle}}
+
+    .quick-contact
+        .quick-contact-mobile
+            span.iresume-whatsapp
+        .quick-contact-email
+            span.iresume-google3
+        .quick-contact-note
 p.section-description #{data.about.description}

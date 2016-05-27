@@ -1,4 +1,16 @@
 .navigation-link {
     color: white;
+    background-color: #333;
     display : block;
+    border-top: 0.2rem solid #414141;
+    border-bottom: 0.2rem solid #222;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navigation-title {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1rem 0
 }
