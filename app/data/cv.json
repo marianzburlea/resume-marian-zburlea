@@ -24,6 +24,23 @@
                 }
             ]
         },
+        "awards": {
+            "title"   : "Awards",
+            "awards": [
+                {
+                    "awardTitle": "Best 30s elevator speed speech",
+                    "awardDescription": "I’ve won the 1st place twice and 2nd place once.",
+                    "awardLocation": "Google Plex meeting – London",
+                    "awardDate": "2014"
+                },
+                {
+                    "awardTitle": "Best web site for president elections",
+                    "awardDescription": "I've participated on a contest and won the best website for one of the candidates to the Romanian presidency.",
+                    "awardLocation": "Constanta / Romania",
+                    "awardDate": "2001"
+                }
+            ]
+        },
         "employment"  : [
             {
                 "employmentDate"    : "2013 Jun – present",

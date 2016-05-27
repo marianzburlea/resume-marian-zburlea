@@ -8,3 +8,29 @@
 .award-date {
     padding: 0.2rem;
 }
+
+.award-title {
+    color: #5e646c;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.award-place-and-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.award-location {
+    color: #da6955;
+    font-weight: bold;
+}
+
+.award-date {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.award-description {
+    text-indent: 2rem;
+    line-height: 1.5rem;
+}
