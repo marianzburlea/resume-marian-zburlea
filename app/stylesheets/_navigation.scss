@@ -1,12 +1,14 @@
 .navigation-link {
     color: white;
     background-color: $color-gray;
-    display : block;
+    display: block;
     border-top: 0.2rem solid $color-gray-light;
     border-bottom: 0.2rem solid $color-gray-dark;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
 }
+
 .navigation-title {
     color: white;
     background-color: $color-orange;
@@ -14,4 +16,11 @@
     font-size: 2rem;
     text-transform: uppercase;
     padding: 1rem 0
+}
+
+.navigation-text {
+    padding-left: 0.9rem;
+    width: 5rem;
+    display: inline-block;
+    text-align: left;
 }
