@@ -12,5 +12,5 @@ header
         .quick-contact-email
             span.iresume-google3
         - var today = new Date().toLocaleDateString('en-GB', {day : 'numeric', month : 'long', year : 'numeric'}).split(' ').join(' ');
-        .quick-contact-note (last updated: #{today})
+        .quick-contact-note {last updated: #{today}}
 p.section-description #{data.about.description}
