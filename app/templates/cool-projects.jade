@@ -1,4 +1,6 @@
-h2.section-title #{data.coolProjects.title}
+h2.section-title
+    span.iresume-cogs #{" "}
+    | #{data.coolProjects.title}
 .cool-projects
     for project in data.coolProjects.projects
         .cool-project

@@ -1,4 +1,6 @@
-h2.section-title #{data.awards.title}
+h2.section-title
+    span.iresume-trophy #{" "}
+    | #{data.awards.title}
 .awards
 for award in data.awards.awards
     .award
